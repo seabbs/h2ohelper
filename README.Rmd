@@ -12,9 +12,13 @@ knitr::opts_chunk$set(
 )
 ```
 
-# h2ohelper
+# H2o Helper
 
-The goal of h2ohelper is to ...
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/h2ohelper)](https://cran.r-project.org/package=h2ohelper)
+[![Travis-CI Build Status](https://travis-ci.org/seabbs/h2ohelper.svg?branch=master)](https://travis-ci.org/seabbs/h2ohelper)
+[![Coverage Status](https://img.shields.io/codecov/c/github/seabbs/h2ohelper/master.svg)](https://codecov.io/github/seabbs/h2ohelper?branch=master)
+
+This package aims to provide utility, quality of life, and presentation improving wrappers around the functionality provided by the [h2o](http://docs.h2o.ai/) R package.
 
 ## Installation
 
@@ -25,10 +29,13 @@ You can install h2ohelper from github with:
 devtools::install_github("seabbs/h2ohelper")
 ```
 
-## Example
+## Docker
 
-This is a basic example which shows you how to solve a common problem:
+This package has been developed in docker based on the `rocker/tidyverse` image, to access the  development environment enter the following at the command line (with an active docker daemon running),
 
-```{r example}
-## basic example code
+```{bash, eval = FALSE}
+docker pull seabbs/h2ohelper
+docker run -d -p 8787:8787 -p 54321:54321 -e USER=seabbs -e PASSWORD=h2ohelper --name h2ohelper seabbs/h2ohelper
 ```
+
+The rstudio client can be accessed on port `8787` at `localhost` (or your machines ip).

@@ -1,13 +1,23 @@
 Package: h2ohelper
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Version: 0.0.1.9000
+Title: Utility Functions to Use with h2o
+Authors@R: c(person("Sam Abbott", role = c("aut", "cre"),
+                     email = "contact@samabbott.co.uk"))
+Description: Provides a variety of general purpose functions aiming to improve quality of life when using h2o.
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+URL: http://www.samabbott.co.uk/h2ohelper, 
+     https://github.com/seabbs/h2ohelper
+BugReports: https://github.com/seabbs/h2ohelper/issues
 Encoding: UTF-8
+RoxygenNote: 6.0.1
 LazyData: true
-Suggests: testthat,
-    devtools
+Suggests: devtools,
+    testthat,
+    covr,
+    h2o,
+    pkgdown,
+    rmarkdown,
+    knitr
+Remotes: hadley/pkgdown

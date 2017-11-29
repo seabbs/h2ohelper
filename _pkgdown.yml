@@ -1,0 +1,4 @@
+title: H2o helper
+template:
+  params:
+    bootswatch: darkly

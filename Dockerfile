@@ -7,10 +7,7 @@ RUN apt-get update -qq \
   && apt-get -y --no-install-recommends install \
     default-jdk \
     default-jre \
-  && R CMD javareconf \
-  && install2.r --error \
-    --repos 'http://cran.rstudio.com' \
-    h2o
+  && R CMD javareconf
 
 EXPOSE 54321
 
