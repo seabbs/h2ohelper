@@ -18,4 +18,4 @@ ADD . /home/rstudio/h2ohelper
 
 RUN Rscript -e 'install.packages("packrat" , repos="http://cran.us.r-project.org")'
 
-RUN Rscript -e 'packrat::restore()'
+RUN Rscript -e 'packrat::restore("/home/rstudio/h2ohelper")'
