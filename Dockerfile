@@ -16,6 +16,6 @@ EXPOSE 54321
 
 ADD . /home/rstudio/h2ohelper
 
-RUN Rscript -e 'install.packages("packrat" , repos="http://cran.us.r-project.org")'
+RUN Rscript -e 'devtools::install_dev_deps("home/rstudio/h2ohelper")'
 
-RUN Rscript -e 'packrat::restore("/home/rstudio/h2ohelper")'
+RUN Rscript -e 'devtools::install("home/rstudio/h2ohelper")'
